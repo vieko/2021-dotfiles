@@ -1,0 +1,10 @@
+[user]
+	name = Vieko Franetovic
+	email = 48670+vieko@users.noreply.github.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[credential]
+	helper = store --file ~/.git-credentials
+	helper = cache --timeout=3600
