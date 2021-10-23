@@ -1,3 +1,1 @@
-*.qcow2
-*.out
-/result
+.dotfiles
