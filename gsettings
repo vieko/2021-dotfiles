@@ -1,0 +1,9 @@
+# UI
+gsettings set org.gnome.desktop.interface enable-animations false
+
+# Theme
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+
+# Icons
+gsettings set org.gnome.desktop.interface icon-theme "Dracula"

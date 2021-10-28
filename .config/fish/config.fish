@@ -1,9 +1,20 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+set fish_greeting
 
-alias dot='/usr/bin/git --git-dir=/home/vieko/.dotfiles/ --work-tree=/home/vieko'
+# +> GENERAL
+alias y="xclip -selection clipboard -in"
+alias p="xclip -selection clipboard -out"
+
+# +> CONVENIENCE
+alias dot="/usr/bin/git --git-dir=/home/vieko/.dotfiles/ --work-tree=/home/vieko"
 alias bat="batcat"
 alias fd="fdfind"
 
-set fzf_fd_opts --hidden --exclude=.git
+# +> EDITOR
+alias vi="nvim"
+alias vim="nvim"
+
+# +> VERSION CONTROL
+alias gs="git status"
+
+# +> PATHS
+set -U fish_user_paths (yarn global bin) $fish_user_paths
