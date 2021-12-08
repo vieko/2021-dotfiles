@@ -1,5 +1,6 @@
 # UI
 gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.desktop.calendar show-weekdate true
 
 # Theme
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"

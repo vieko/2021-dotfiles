@@ -8,3 +8,5 @@
 [credential]
 	helper = store --file ~/.git-credentials
 	helper = cache --timeout=3600
+[pull]
+	rebase = false
