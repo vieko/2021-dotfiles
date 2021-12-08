@@ -14,8 +14,8 @@ alias dot="/usr/bin/git --git-dir=/home/vieko/.dotfiles/ --work-tree=/home/vieko
 alias bat="batcat"
 alias fd="fdfind"
 alias rm="trash"
-alias speedtest="speed-test"
 alias st="speed-test"
+alias speedtest="speed-test"
 
 # +> EDITOR
 alias vi="nvim"
@@ -23,6 +23,8 @@ alias vim="nvim"
 
 # +> VERSION CONTROL
 alias ga="git add"
+alias gap="git add --patch"
+alias gai="git add --interactive"
 alias gb="git branch -av"
 alias gop="git open"
 alias gc="git commit"
@@ -39,6 +41,9 @@ alias gp="git push"
 alias gpl="git pull --rebase --autostash"
 alias gs="git status --short ."
 alias gss="git status"
+alias gst="git stash"
+alias gr="git reset HEAD"
+alias grv="git rev-parse"
 
 # +> PYENV
 status is-login; and pyenv init --path | source
