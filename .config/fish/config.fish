@@ -50,5 +50,8 @@ status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
+# +> GO
+set -x GOPATH $HOME/usr/local/go/bin
+
 # +> PATHS
 set -U fish_user_paths (yarn global bin) $fish_user_paths
