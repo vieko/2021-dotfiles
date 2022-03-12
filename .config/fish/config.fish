@@ -53,5 +53,14 @@ status --is-interactive; and pyenv virtualenv-init - | source
 # +> GO
 set -x GOPATH $HOME/usr/local/go/bin
 
+# +> IPINFO
+function __complete_ipinfo
+    set -lx COMP_LINE (commandline -cp)
+    test -z (commandline -ct)
+    and set COMP_LINE "$COMP_LINE "
+    /usr/bin/ipinfo
+end
+complete -f -c ipinfo -a "(__complete_ipinfo)"
+
 # +> PATHS
 set -U fish_user_paths (yarn global bin) $fish_user_paths

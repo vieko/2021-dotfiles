@@ -119,6 +119,4 @@ fi
 # access the bare git repository for dotfiles
 alias dot='/usr/bin/git --git-dir=/home/vieko/.dotfiles/ --work-tree=/home/vieko'
 
-PATH=/opt/firefox/firefox:$PATH
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
